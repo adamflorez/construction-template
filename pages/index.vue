@@ -296,21 +296,26 @@
           class="absolute brightness-[30%] z-0 w-full"
         />
       </div>
-      <div class="w-full bg-orange-400 px-10 py-20 flex flex-col items-center">
+      <div
+        class="w-full relative bg-orange-400 md:px-10 p-2 flex flex-col justify-end left-0"
+      >
         <div
-          class="flex justify-center w-full items-center duration-300 opacity-0 target"
+          id="testimonial"
+          class="flex flex-wrap flex-col justify-center w-full text-center items-center duration-300 opacity-0"
         >
-          <div class="h-[200px] w-[200px] object-cover mr-20">
+          <div
+            class="max-h-[200px] max-w-[200px] pt-2 aspect-square object-cover mb-4"
+          >
             <NuxtImg
               :src="testimonials[currentTestimonial].image"
-              class="h-full w-full object-cover"
+              class="h-full w-full aspect-square object-cover"
             />
           </div>
           <div>
-            <blockquote class="text-2xl w-[800px] text-white mb-4">
+            <blockquote class="text-2xl max-w-[800px] text-white mb-4">
               "{{ testimonials[currentTestimonial].testimonial }}"
             </blockquote>
-            <h2 class="text-base font-medium uppercase">
+            <h2 class="text-base text-orange-950 font-medium uppercase">
               {{ testimonials[currentTestimonial].name }}
             </h2>
             <h3 class="text-white text-opacity-80 text-md mt-1">
@@ -318,7 +323,7 @@
             </h3>
           </div>
         </div>
-        <div class="flex w-full justify-end pt-8">
+        <div class="flex w-full justify-center md:justify-end pt-8 mb-12">
           <button>
             <Icon
               v-for="(testimonial, index) in testimonials"
@@ -330,7 +335,118 @@
           </button>
         </div>
       </div>
-      <div class='h-screen'></div>
+      <div class="md:py-20 py-6 px-2 md:px-10">
+        <h2 class="outlined text-9xl text-center font-black text-transparent">
+          Blogs
+        </h2>
+        <h3 class="text-4xl font-bold ml-8 mb-12 text-center">
+          Todays latest blogs & articles
+        </h3>
+        <div class="flex justify-between flex-wrap gap-2">
+          <div>
+            <NuxtImg
+              src="https://images.pexels.com/photos/220152/pexels-photo-220152.jpeg?auto=compress&cs=tinysrgb&w=800"
+            />
+            <div class="bg-white z-10 relative -mt-10 ml-10 p-8">
+              <small class="text-gray-500 uppercase text-md"
+                >8 May 2019
+                <Icon name="tabler:point-filled" color="grey" class="mx-2" />
+                EQUIPMENT</small
+              >
+              <h4 class="font-bold text-lg w-[80%]">
+                5 Best Tiles for Your Home
+              </h4>
+              <div class="border my-4"></div>
+              <NuxtLink
+                class="py-4 hover:text-orange-500 duration-300"
+                to="/about"
+                >Read More<Icon
+                  name="material-symbols-light:arrow-outward-rounded"
+                  class="ml-2"
+              /></NuxtLink>
+            </div>
+          </div>
+          <div>
+            <NuxtImg
+              src="https://images.pexels.com/photos/220152/pexels-photo-220152.jpeg?auto=compress&cs=tinysrgb&w=800"
+            />
+            <div class="bg-white z-10 relative -mt-10 ml-10 p-8">
+              <small class="text-gray-500 uppercase text-md"
+                >8 May 2019
+                <Icon name="tabler:point-filled" color="grey" class="mx-2" />
+                EQUIPMENT</small
+              >
+              <h4 class="font-bold text-lg w-[80%]">
+                5 Best Tiles for Your Home
+              </h4>
+              <div class="border my-4"></div>
+              <NuxtLink
+                class="py-4 hover:text-orange-500 duration-300"
+                to="/about"
+                >Read More<Icon
+                  name="material-symbols-light:arrow-outward-rounded"
+                  class="ml-2"
+              /></NuxtLink>
+            </div>
+          </div>
+          <div>
+            <NuxtImg
+              src="https://images.pexels.com/photos/220152/pexels-photo-220152.jpeg?auto=compress&cs=tinysrgb&w=800"
+            />
+            <div class="bg-white z-10 relative -mt-10 ml-10 p-8">
+              <small class="text-gray-500 uppercase text-md"
+                >8 May 2019
+                <Icon name="tabler:point-filled" color="grey" class="mx-2" />
+                EQUIPMENT</small
+              >
+              <h4 class="font-bold text-lg w-[80%]">
+                5 Best Tiles for Your Home
+              </h4>
+              <div class="border my-4"></div>
+              <NuxtLink
+                class="py-4 hover:text-orange-500 duration-300"
+                to="/about"
+                >Read More<Icon
+                  name="material-symbols-light:arrow-outward-rounded"
+                  class="ml-2"
+              /></NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-950 py-4 text-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+          <div>
+            <h3 class="text-xl font-black uppercase ">Buildco</h3>
+            <p class="my-8">
+              To be the gold standard in home construction, transforming spaces
+              into bespoke havens for families to thrive.
+            </p>
+            <div class="flex gap-x-2">
+              <a
+                href="https://www.instagram.com/"
+                class="p-2 rounded-full border h-10 w-10 grid place-items-center"
+                ><Icon name="ph:instagram-logo"
+              /></a>
+              <a
+                href="https://www.facebook.com/"
+                class="p-2 rounded-full border h-10 w-10 grid place-items-center"
+                ><Icon name="ion:social-facebook"
+              /></a>
+              <a
+                href="https://www.twitter.com/"
+                class="p-2 rounded-full border h-10 w-10 grid place-items-center"
+                ><Icon name="ri:twitter-x-fill"
+              /></a>
+              <a
+                href="https://www.youtube.com/"
+                class="p-2 rounded-full border h-10 w-10 grid place-items-center"
+                ><Icon name="prime:youtube"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -342,12 +458,18 @@ const videoHover = ref(false);
 const newCursor = ref(null);
 const currentTestimonial = ref(0);
 const { $anime } = useNuxtApp();
+const gsap = useGsap();
 
 onMounted(() => {
-  $anime(
-    { targets: ".target", translateX: 0, duration: 300, opacity: 1 },
-    { offset: "100%" }
-  );
+  gsap.to("#testimonial", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: "#testimonial",
+      start: "-100 center", // Adjust this to control when the animation starts
+      // Uncomment this line if you want to see the start and end points visually for debugging
+    },
+  });
+
   if (videoHover) {
     document.body.style.cursor = `url('${newCursor.value}'), auto`;
   } else {
@@ -356,13 +478,12 @@ onMounted(() => {
 });
 
 function goToSlide(targetIndex) {
-  // Determine the direction of the slide movement
-  const direction = targetIndex > currentTestimonial.value ? "right" : "left";
-
-  $anime({ targets: ".target", translateX: 0, duration: 300, opacity: 1 });
-
-  // Update the current slide index to the target index
   currentTestimonial.value = targetIndex;
+
+  gsap.to("#testimonial", {
+    opacity: 1,
+    duration: 0.8,
+  });
 }
 
 const companyValues = [
