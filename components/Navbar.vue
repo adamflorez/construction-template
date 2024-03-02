@@ -67,7 +67,7 @@ import type { ServicesMenu } from '#build/components';
         </NuxtLink>
       </div>
     </div>
-    <div class="flex lg:hidden items-stretch justify-between">
+    <div class="fixed w-full z-50 bg-white flex lg:hidden items-stretch justify-between">
       <NuxtLink
         @click="servicesMenu = false"
         to="/"
@@ -103,7 +103,7 @@ import type { ServicesMenu } from '#build/components';
       </nav>
       <NuxtLink
         to="/contact"
-        class="bg-orange-400 hover:bg-orange-500 duration-200 font-bold px-4 py-4 text-white"
+        class="bg-orange-400 hover:bg-orange-500 duration-200 font-bold px-4 py-8 text-white"
       >
         Request Quote
         <Icon

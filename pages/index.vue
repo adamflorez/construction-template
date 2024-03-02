@@ -28,10 +28,10 @@
       >
         <div
           v-for="(item, index) in companyValues"
-          class="w-full lg:max-w-[456px]"
+          class="w-full py-6lg:max-w-[456px]"
           :class="
             index % 2 != 0 &&
-            'bg-gray-100 my-10 bg-opacity-50 md:my-0 md:bg-opacity-0'
+            'bg-gray-100 bg-opacity-50 md:my-0 md:bg-opacity-0'
           "
         >
           <Card :value="item"></Card>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="pt-4 pb-14 px-4 lg:px-2 flex flex-wrap items-center">
-        <div class="relative lg:w-1/2 w-full">
+        <div class="relative lg:w-1/2 w-full pr-8">
           <h2 class="z-0 outlined text-9xl font-black text-transparent">
             About
           </h2>
@@ -68,7 +68,7 @@
             Welcome to Buildco. We are professional & reliable
           </h3>
           <NuxtLink
-            class="border-2 border-black px-8 py-4 hover:border-orange-500 hidden lg:flex lg:w-max hover:text-orange-500 duration-300"
+            class="border-2 border-black px-8 py-4 hover:border-orange-500 hidden lg:flex lg:w-max hover:text-primary-hover duration-300"
             to="/about"
             >Read More<Icon
               name="material-symbols-light:arrow-outward-rounded"
@@ -86,25 +86,25 @@
             <li class="mb-4">
               <Icon
                 name="tabler:point-filled"
-                class="text-orange-400 mr-4"
+                class="text-primary mr-4"
               />Geographical diversity, project complexity
             </li>
             <li class="mb-4">
               <Icon
                 name="tabler:point-filled"
-                class="text-orange-400 mr-4"
+                class="text-primary mr-4"
               />Whether building on land or over water
             </li>
             <li>
               <Icon
                 name="tabler:point-filled"
-                class="text-orange-400 mr-4"
+                class="text-primary mr-4"
               />Construction companies respond to the unique needs
             </li>
           </ul>
         </div>
       </div>
-      <div class="py-10 hidden lg:block">
+      <div class="pt-10 hidden lg:block">
         <span class="uppercase font-medium"
           >Teams and Companies we've worked with:</span
         >
@@ -134,7 +134,7 @@
         </div>
       </div>
       <div
-        class="py-20 mt-10 flex flex-wrap justify-center items-start bg-blue-300 relative overflow-hidden text-white"
+        class="py-20 flex flex-wrap justify-center items-start bg-blue-300 relative overflow-hidden text-white"
       >
         <div class="relative pl-4 p-2 z-40 lg:w-1/2 w-full">
           <h2 class="z-0 outlined text-9xl font-black text-transparent">
@@ -144,7 +144,7 @@
             Providing solutions that meet your needs.
           </h3>
           <NuxtLink
-            class="border-2 border-white px-8 py-4 hover:border-orange-500 hover:text-orange-500 duration-300"
+            class="border-2 border-white px-8 py-4 hover:border-orange-500 hover:text-primary-hover duration-300"
             to="/about"
             >View All Services<Icon
               name="material-symbols-light:arrow-outward-rounded"
@@ -154,35 +154,35 @@
         </div>
         <div class="relative z-20 flex flex-col lg:w-1/3 lg:pl-4 mt-8 w-full">
           <NuxtLink
-            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-orange-500 duration-300"
+            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-primary-hover duration-300"
             to="/about"
             >/ Design and Planning<Icon
               name="material-symbols-light:arrow-outward-rounded"
               class="ml-2"
           /></NuxtLink>
           <NuxtLink
-            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-orange-500 duration-300"
+            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-primary-hover duration-300"
             to="/about"
             >/ Remodeling Services<Icon
               name="material-symbols-light:arrow-outward-rounded"
               class="ml-2"
           /></NuxtLink>
           <NuxtLink
-            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-orange-500 duration-300"
+            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-primary-hover duration-300"
             to="/about"
             >/ Construction Services<Icon
               name="material-symbols-light:arrow-outward-rounded"
               class="ml-2"
           /></NuxtLink>
           <NuxtLink
-            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-orange-500 duration-300"
+            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-primary-hover duration-300"
             to="/about"
             >/ Exterior Improvements<Icon
               name="material-symbols-light:arrow-outward-rounded"
               class="ml-2"
           /></NuxtLink>
           <NuxtLink
-            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-orange-500 duration-300"
+            class="text-xl pl-4 py-4 hover:border-orange-500 hover:translate-x-2 hover:text-primary-hover duration-300"
             to="/about"
             >/ Specialty Services<Icon
               name="material-symbols-light:arrow-outward-rounded"
@@ -194,13 +194,25 @@
           src="https://images.pexels.com/photos/1579356/pexels-photo-1579356.jpeg?auto=compress&cs=tinysrgb&w=800"
         ></NuxtImg>
       </div>
-      <div class="bg-orange-500 w-full pt-8 lg:pt-20 pb-8 text-center relative">
-        <h2 class="outlined text-transparent font-black text-9xl">Portfolio</h2>
-        <h3 class="text-white font-bold -mt-3 text-4xl relative z-10">
+      <div class="bg-orange-400 w-full pt-8 lg:pt-20 pb-8 text-center relative">
+        <h2 class="outlined-orange text-transparent font-black text-9xl">
+          Portfolio
+        </h2>
+        <h3 class="text-white font-bold -mt-3 text-4xl mb-8 relative z-10">
           See Our Case Studies
         </h3>
+        <div class="flex md:hidden">
+          <NuxtLink
+            class="border-2 border-white text-white mx-auto px-8 py-4 hover:border-orange-800 hover:text-orange-800 duration-300"
+            to="/about"
+            >View All Projects<Icon
+              name="material-symbols-light:arrow-outward-rounded"
+              class="ml-2"
+              size="24"
+          /></NuxtLink>
+        </div>
         <div
-          class="md:grid flex flex-wrap place-items-center gap-3 grid-cols-2 grid-rows-2 p-8"
+          class="md:grid px-12 flex-wrap hidden place-items-center gap-12 grid-cols-2 grid-rows-2 p-8"
         >
           <div class="object-cover overflow-hidden">
             <NuxtImg
@@ -232,12 +244,15 @@
           </div>
         </div>
       </div>
-      <div class="w-full pt-8 lg:pt-20 pb-8 text-center relative">
+      <div class="w-full pt-8 lg:pt-10 pb-6 text-center relative">
         <h2 class="outlined text-transparent font-black text-9xl">Awards</h2>
-        <h3 class="font-bold -mt-3 text-4xl">
+        <h3 class="font-bold -mt-3 text-4xl mb-8">
           Buildco is an award-winning Construction company
         </h3>
-        <div class="flex justify-between py-8 items-center border-b mx-4">
+        <NuxtLink
+          to="/awards"
+          class="flex justify-between hover:text-primary-hover hover:pl-8 duration-300 py-8 items-center border-b mx-4"
+        >
           <h3 class="text-3xl font-black">2017</h3>
           <h4 class="text-xl">Performance Award</h4>
           <p class="hidden md:block">
@@ -248,8 +263,11 @@
             class="ml-2"
             size="24"
           />
-        </div>
-        <div class="flex justify-between py-8 items-center border-b mx-4">
+        </NuxtLink>
+        <NuxtLink
+          to="/awards"
+          class="flex justify-between hover:text-primary-hover hover:pl-8 duration-300 py-8 items-center border-b mx-4"
+        >
           <h3 class="text-3xl font-black">2017</h3>
           <h4 class="text-xl">Performance Award</h4>
           <p class="hidden md:block">
@@ -260,8 +278,11 @@
             class="ml-2"
             size="24"
           />
-        </div>
-        <div class="flex justify-between py-8 items-center mx-4 mb-8">
+        </NuxtLink>
+        <NuxtLink
+          to="/awards"
+          class="flex justify-between hover:text-primary-hover hover:pl-8 duration-300 py-8 items-center mx-4"
+        >
           <h3 class="text-3xl font-black">2017</h3>
           <h4 class="text-xl">Performance Award</h4>
           <p class="hidden md:block">
@@ -272,7 +293,7 @@
             class="ml-2"
             size="24"
           />
-        </div>
+        </NuxtLink>
       </div>
       <div
         class="w-full pt-8 lg:pt-20 pb-8 overflow-hidden text-center relative flex items-center justify-end"
@@ -282,11 +303,11 @@
             class="flex items-start justify-end py-4 relative z-10 border-b text-white"
           >
             <h2 class="text-9xl">1500</h2>
-            <span class="text-5xl">+</span>
+            <span class="text-5xl text-primary">+</span>
           </div>
           <div class="relative z-10 text-white font-medium py-4">
             <p>
-              <span class="text-orange-400">Clients Satisfied</span> with Our
+              <span class="text-primary">Clients Satisfied</span> with Our
               Work.
             </p>
           </div>
@@ -297,7 +318,7 @@
         />
       </div>
       <div
-        class="w-full relative bg-orange-400 md:px-10 p-2 flex flex-col justify-end left-0"
+        class="w-full relative bg-orange-400 md:px-10 pt-12 px-2 flex flex-col justify-end left-0"
       >
         <div
           id="testimonial"
@@ -342,7 +363,7 @@
         <h3 class="text-4xl font-bold ml-8 mb-12 text-center">
           Todays latest blogs & articles
         </h3>
-        <div class="flex justify-between flex-wrap gap-2">
+        <div class="flex justify-center flex-wrap gap-4">
           <div>
             <NuxtImg
               src="https://images.pexels.com/photos/220152/pexels-photo-220152.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -358,7 +379,7 @@
               </h4>
               <div class="border my-4"></div>
               <NuxtLink
-                class="py-4 hover:text-orange-500 duration-300"
+                class="py-4 hover:text-primary-hover duration-300"
                 to="/about"
                 >Read More<Icon
                   name="material-symbols-light:arrow-outward-rounded"
@@ -381,7 +402,7 @@
               </h4>
               <div class="border my-4"></div>
               <NuxtLink
-                class="py-4 hover:text-orange-500 duration-300"
+                class="py-4 hover:text-primary-hover duration-300"
                 to="/about"
                 >Read More<Icon
                   name="material-symbols-light:arrow-outward-rounded"
@@ -404,7 +425,7 @@
               </h4>
               <div class="border my-4"></div>
               <NuxtLink
-                class="py-4 hover:text-orange-500 duration-300"
+                class="py-4 hover:text-primary-hover duration-300"
                 to="/about"
                 >Read More<Icon
                   name="material-symbols-light:arrow-outward-rounded"
@@ -415,9 +436,11 @@
         </div>
       </div>
       <div class="bg-slate-950 py-4 text-white">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
-          <div>
-            <h3 class="text-xl font-black uppercase ">Buildco</h3>
+        <div
+          class="grid pt-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-10"
+        >
+          <div class="mb-10">
+            <h3 class="text-xl font-black uppercase">Buildco</h3>
             <p class="my-8">
               To be the gold standard in home construction, transforming spaces
               into bespoke havens for families to thrive.
@@ -444,6 +467,76 @@
                 ><Icon name="prime:youtube"
               /></a>
             </div>
+          </div>
+          <div class="mb-10">
+            <h3 class="text-xl font-black uppercase">Address</h3>
+            <div class="flex mt-8 items-start">
+              <Icon
+                name="material-symbols:android-emergency-location-service"
+                class="text-primary mr-2"
+                size="24"
+              />
+              <p>123 some street, Winter Haven, Fl, 33881, USA</p>
+            </div>
+            <div class="flex mt-4 items-start">
+              <Icon
+                name="material-symbols:call"
+                class="text-primary mr-2"
+                size="24"
+              />
+              <div>
+                <a href="tel:+13862222222">+1 386 222 2222</a><br />
+                <a href="tel:+13862222222">+1 386 222 2222</a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-10">
+            <h3 class="text-xl font-black uppercase">Pages</h3>
+            <ul class="mt-8 flex flex-col">
+              <NuxtLink to="/">Home</NuxtLink>
+              <NuxtLink to="/services">Services</NuxtLink>
+              <NuxtLink to="/portfolio">Portfolio</NuxtLink>
+              <NuxtLink to="/about">Why Choose Us?</NuxtLink>
+              <NuxtLink to="/contact">Contact Us</NuxtLink>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-black uppercase">Newsletter</h3>
+            <p class="mt-8 mb-4">
+              Subscribe to our newsletter for daily news and updates
+            </p>
+            <div class="flex border-b pb-1 items-center">
+              <input
+                class="outline-none bg-transparent py-2 w-full"
+                type="email"
+                placeholder="Your Email"
+              />
+              <button
+                class="bg-orange-400 hover:bg-orange-500 duration-300 w-8 h-8 grid place-items-center"
+              >
+                <Icon
+                  name="material-symbols-light:arrow-outward-rounded"
+                  class=""
+                  size="24"
+                />
+              </button>
+            </div>
+            <div class="flex items-center mt-3">
+              <input type="checkbox" id="privacy" class="mr-2" />
+              <label for="privacy"
+                >I agree to the
+                <NuxtLink to="/privacy-policy" class="underline"
+                  >Privacy Policy</NuxtLink
+                ></label
+              >
+            </div>
+          </div>
+          <div
+            class="border-t w-full md:col-span-2 lg:col-span-4 mt-10 py-9 flex justify-end text-slate-300"
+          >
+            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            <p class="mx-3">|</p>
+            <NuxtLink to="/terms-of-use">Terms of User</NuxtLink>
           </div>
         </div>
       </div>
@@ -529,7 +622,7 @@ const testimonials = [
       "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=800", // Replace with actual image URL
     name: "Alex Johnson",
     testimonial:
-      "The customer service was outstanding and the product exceeded my expectations in every way.",
+      "The customer service was outstanding and the product exceeded expectations in every way.",
     position: "Customer Support Specialist",
   },
   {
@@ -537,7 +630,7 @@ const testimonials = [
       "https://images.pexels.com/photos/1310474/pexels-photo-1310474.jpeg?auto=compress&cs=tinysrgb&w=800", // Replace with actual image URL
     name: "Samantha Brown",
     testimonial:
-      "A must-have for anyone looking to improve their workflow and leverage the latest in industry standards.",
+      "A must-have for anyone looking to leverage the latest industry standards.",
     position: "Software Developer",
   },
   {
